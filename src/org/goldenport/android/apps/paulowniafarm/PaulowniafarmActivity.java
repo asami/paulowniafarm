@@ -1,6 +1,8 @@
 package org.goldenport.android.apps.paulowniafarm;
 
+import org.goldenport.android.GModule;
 import org.goldenport.android.GTabActivity;
+import org.goldenport.android.controllers.NullController;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -12,7 +14,17 @@ import android.widget.TabHost;
  * @version Apr. 30, 2011 
  * @author  ASAMI, Tomoharu
  */
-public class PaulowniafarmActivity extends GTabActivity {
+public class PaulowniafarmActivity extends GTabActivity<NullController> implements PaulowniafarmConstants {
+    @Override
+    protected GModule module() {
+        return new PaulowniafarmModule(getApplicationContext());
+    }
+
+    @Override
+    protected Class<NullController> controller_Class() {
+        return NullController.class;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

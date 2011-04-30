@@ -25,7 +25,7 @@ public class ScreenMonitorActivity extends GActivity<SystemInformationController
 
     @Override
     protected GModule module() {
-        return new PaulowniafarmModule();
+        return new PaulowniafarmModule(getApplicationContext());
     }
 
 	@Override

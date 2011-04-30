@@ -12,10 +12,10 @@ import android.view.WindowManager;
 
 /*
  * @since   Apr. 30, 2011
- * @version Apr. 30, 2011
+ * @version May.  1, 2011
  * @author  ASAMI, Tomoharu
  */
-public class SystemInformationModel extends GModel<GContext, GErrorModel> {
+public class SystemInformationModel extends GModel<GContext, GErrorModel<GContext>> {
     public Bundle getScreenData() {
         WindowManager wm = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();

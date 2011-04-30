@@ -3,7 +3,13 @@
   <dependencies>
     <dependency org="com.google.guava" name="guava" rev="r09"/>
     <dependency org="commons-lang" name="commons-lang" rev="2.6"/>
-    <dependency org="com.google.inject" name="guice" rev="3.0"/>
+    <dependency org="org.roboguice" name="roboguice" rev="1.1.1">
+      <exclude org="com.google.android"/>
+      <exclude org="com.google.android.maps"/>
+    </dependency>
+    <!-- 
+    <dependency org="com.google.inject" name="guice" rev="3.0-no_aop"/>
+    -->    
     <dependency org="org.slf4j" name="slf4j-android" rev="1.6.1-RC1">
       <exclude org="com.google.android"/>
     </dependency>

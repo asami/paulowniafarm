@@ -14,7 +14,7 @@ import android.os.Bundle;
  * @version Apr. 30, 2011
  * @author  ASAMI, Tomoharu
  */
-public class SystemInformationController extends GController<GContext, GErrorModel, SystemInformationModel, GAgent<GContext, GErrorModel, SystemInformationModel>> {
+public class SystemInformationController extends GController<GContext, GErrorModel<GContext>, SystemInformationModel, GAgent<GContext, GErrorModel<GContext>, SystemInformationModel>> {
     @Inject
     protected SystemInformationModel simodel;
 
