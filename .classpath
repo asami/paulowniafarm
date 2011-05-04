@@ -3,12 +3,12 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
-	<classpathentry kind="src" path="goldenport-android-library_src"/>
 	<classpathentry kind="src" path="goldenport-android-drivers_src"/>
 	<classpathentry kind="src" path="goldenport-android-drivers_facebook"/>
 	<classpathentry kind="lib" path="lib/slf4j-android-1.6.1-RC1.jar"/>
 	<classpathentry kind="lib" path="lib/guava-r09.jar"/>
 	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
 	<classpathentry kind="lib" path="lib/guice-2.0-no_aop.jar"/>
+	<classpathentry kind="src" path="goldenport-android-library_src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
