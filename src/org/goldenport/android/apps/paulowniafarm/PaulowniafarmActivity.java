@@ -2,6 +2,8 @@ package org.goldenport.android.apps.paulowniafarm;
 
 import org.goldenport.android.GModule;
 import org.goldenport.android.GTabActivity;
+import org.goldenport.android.apps.paulowniafarm.log.LogViewerActivity;
+import org.goldenport.android.apps.paulowniafarm.sysinfo.ScreenMonitorActivity;
 import org.goldenport.android.controllers.NullController;
 
 import android.content.Intent;
