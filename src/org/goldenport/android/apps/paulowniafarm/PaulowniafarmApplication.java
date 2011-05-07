@@ -1,13 +1,10 @@
 package org.goldenport.android.apps.paulowniafarm;
 
 import org.goldenport.android.GApplication;
-import org.goldenport.android.GModule;
-import org.goldenport.android.apps.paulowniafarm.log.LogModule;
-import org.goldenport.android.apps.paulowniafarm.sysinfo.SystemInformationModule;
-
-import com.google.inject.Module;
 
 import android.content.Context;
+
+import com.google.inject.Module;
 
 /**
  * @since   May.  5, 2011

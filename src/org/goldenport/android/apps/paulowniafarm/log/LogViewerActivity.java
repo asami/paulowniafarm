@@ -5,6 +5,7 @@ import java.util.List;
 import org.goldenport.android.GActivity;
 import org.goldenport.android.apps.paulowniafarm.R;
 import org.goldenport.android.traits.ListViewTrait;
+import org.goldenport.android.LayoutView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,9 @@ import android.widget.Button;
  * @author  ASAMI, Tomoharu
  */
 public class LogViewerActivity extends GActivity<LogController> {
+    @LayoutView(R.id.save)
+    private Button save;
+
     public LogViewerActivity() {
         addTrait(new ListViewTrait());
     }
@@ -31,7 +35,6 @@ public class LogViewerActivity extends GActivity<LogController> {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.log_viewer);
-        Button save = (Button)findViewById(R.id.save);
         save.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
