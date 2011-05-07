@@ -12,4 +12,9 @@ public class LogContext extends GContext {
     protected String context_Name() {
         return "paulowniafarm";
     }
+
+    public String getTag() {
+        // TODO Auto-generated method stub
+        return null;
+    }
 }

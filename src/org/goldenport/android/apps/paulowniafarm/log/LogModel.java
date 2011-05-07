@@ -17,11 +17,12 @@ import com.google.common.io.Closeables;
 
 /**
  * @since   Mar.  5, 2011
- * @version May.  5, 2011
+ * @version May.  7, 2011
  * @author  ASAMI, Tomoharu
  */
 public class LogModel extends GModel<LogContext, LogErrorModel> {
     public static final String CRLF = "\r\n";
+    private String _log_tag = null;
 
     public String makeDefaultFilename(long datetime) {
         return _make_filename(datetime);
@@ -41,13 +42,19 @@ public class LogModel extends GModel<LogContext, LogErrorModel> {
         List<String> r = new ArrayList<String>();
         InputStream in = null;
         try {
-            Process proc = Runtime.getRuntime().exec("logcat -d -v time -s moogli:*");
+            String cmd = String.format("logcat -d -v time -s %s:*", getLogTag());
+            Process proc = Runtime.getRuntime().exec(cmd);
             in = proc.getInputStream();
             return _filter(CharStreams.readLines(new InputStreamReader(in, "utf-8")));
         } catch (IOException e) {} finally {
             Closeables.closeQuietly(in);
         }
         return r;
+    }
+
+    private String getLogTag() {
+        if (_log_tag  != null) return _log_tag;
+        else return gcontext.getLogTag(); // XXX
     }
 
     private List<String> _filter(List<String> lines) {
