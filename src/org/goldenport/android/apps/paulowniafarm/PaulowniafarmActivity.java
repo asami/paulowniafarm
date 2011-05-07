@@ -31,18 +31,18 @@ public class PaulowniafarmActivity extends GTabActivity<NullController> implemen
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        Resources res = getResources();   
-        TabHost tabHost = getTabHost();    
-        Intent intent1 = new Intent().setClass(this, LogViewerActivity.class);  
-        TabHost.TabSpec spec1 = tabHost.newTabSpec("tab1")  
-            .setIndicator("Log", res.getDrawable(R.drawable.ic_tab_screen))  
-            .setContent(intent1);  
-        tabHost.addTab(spec1);  
-        Intent intent2 = new Intent().setClass(this, ScreenMonitorActivity.class);  
-        TabHost.TabSpec spec2 = tabHost.newTabSpec("tab2")  
-            .setIndicator("Screen", res.getDrawable(R.drawable.ic_tab_screen))  
-            .setContent(intent2);  
-        tabHost.addTab(spec2);  
+        Resources res = getResources();
+        TabHost tabHost = getTabHost();
+        Intent intent1 = new Intent().setClass(this, LogViewerActivity.class);
+        TabHost.TabSpec spec1 = tabHost.newTabSpec("tab1")
+            .setIndicator("Log", res.getDrawable(R.drawable.ic_tab_screen))
+            .setContent(intent1);
+        tabHost.addTab(spec1);
+        Intent intent2 = new Intent().setClass(this, ScreenMonitorActivity.class);
+        TabHost.TabSpec spec2 = tabHost.newTabSpec("tab2")
+            .setIndicator("Screen", res.getDrawable(R.drawable.ic_tab_screen))
+            .setContent(intent2);
+        tabHost.addTab(spec2);
 //        tabHost.setCurrentTab(1);
     }
 }

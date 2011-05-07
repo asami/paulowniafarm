@@ -3,9 +3,8 @@
       package="org.goldenport.android.apps.paulowniafarm"
       android:versionCode="1"
       android:versionName="1.0">
-
-
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
+<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="PaulowniafarmApplication">
         <activity android:name=".PaulowniafarmActivity"
                   android:label="@string/app_name">
             <intent-filter>
@@ -13,6 +12,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".sysinfo.ScreenMonitorActivity">
+        </activity>
+        <activity android:name=".log.LogViewerActivity">
+        </activity>
     </application>
 </manifest>

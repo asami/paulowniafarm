@@ -1,18 +1,14 @@
 package org.goldenport.android.apps.paulowniafarm.sysinfo;
 
-import org.goldenport.android.GAgent;
-import org.goldenport.android.GContext;
 import org.goldenport.android.GController;
-import org.goldenport.android.GErrorModel;
-
-import com.google.inject.Inject;
-import com.google.inject.Injector;
 
 import android.os.Bundle;
 
+import com.google.inject.Inject;
+
 /*
  * @since   Apr. 30, 2011
- * @version May.  5, 2011
+ * @version May.  7, 2011
  * @author  ASAMI, Tomoharu
  */
 public class SystemInformationController extends GController<SystemInformationContext,
