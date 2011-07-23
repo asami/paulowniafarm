@@ -32,16 +32,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>goldenport-android-drivers_facebook</name>
-			<type>2</type>
-			<locationURI>_android_goldenport_android_drivers_2af1352a/facebook</locationURI>
-		</link>
-		<link>
-			<name>goldenport-android-drivers_src</name>
-			<type>2</type>
-			<locationURI>_android_goldenport_android_drivers_2af1352a/src</locationURI>
-		</link>
-		<link>
 			<name>goldenport-android-library_src</name>
 			<type>2</type>
 			<locationURI>_android_goldenport_android_library_c262ec9a/src</locationURI>

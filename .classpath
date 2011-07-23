@@ -8,8 +8,8 @@
 	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
 	<classpathentry kind="lib" path="lib/guice-2.0-no_aop.jar"/>
 	<classpathentry kind="lib" path="lib/roboguice-1.1.1.jar"/>
-	<classpathentry kind="src" path="goldenport-android-drivers_src"/>
-	<classpathentry kind="src" path="goldenport-android-drivers_facebook"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/goldenport-android-library"/>
 	<classpathentry kind="src" path="goldenport-android-library_src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/goldenport-java-library"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
